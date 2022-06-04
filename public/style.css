@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Crimson Text', serif;
+    /* border: 1px solid */
+}
+
+body {
+    background: #5a6b51;
+}
+
+span {
+    color: black;
+    display: inline-block;
+}
+
+header {
+    margin: 0 10%;
+    width: 80%;
+    padding: 1rem 2%;
+}
+
+header h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    margin-bottom: .2rem;
+    color: #f6fcf4;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+/* ///////////// */
+/* Index styling */
+/* ///////////// */
+
+.container {
+    width: 35%;
+    margin: 0 0 0 10%;
+    padding: 1rem 2%;
+    float: left;
+    background: #bdd7b0;
+    border-radius: 3rem;
+}
+
+.container section {
+    margin: .5rem 0;
+}
+
+.container h5 {
+    margin: 0;
+}
+
+.container label {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+
+.fa-mug-hot {
+    color: white;
+}
+
+.container button {
+    margin: 0;
+}
+
+.otherContainer {
+    width: 40%;
+    float: left;
+    margin: 0 10% 0 5%;
+    padding: 1rem 2%;
+    background: #bdd7b0;
+    border-radius: 3rem;
+}
+
+.otherContainer h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 6rem;
+    margin:0;
+    letter-spacing: .1rem;
+    color:#f6fcf4;
+}
+
+/* //////////////////// */
+/* log in and signup*/
+/* //////////////////// */
+
+.containerLogin,
+.containerSignup {
+    width: 35%;
+    margin: 0 0 0 10%;
+    padding: 1rem 2%;
+    background:#bdd7b0;
+    float: left;
+}
+
+.containerLogin input,
+.containerSignup input{
+    display: block;
+    margin: .5rem 0;
+}
+
+/* ////////////////// */
+/* Barista */
+/* ////////////////// */
+
+.containerBarista {
+    width: 80%;
+    height: auto;
+    margin: 0 10%;
+    padding: 1rem 2%;
+}
+
+.orderList span {
+    margin: 0;
+}
+
+.orderTrue,
+.orderFalse {
+    width: 50%;
+    float: left;
+    list-style: none;
+}

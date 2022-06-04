@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+    <title>Order Up!</title>
+    <script src="https://kit.fontawesome.com/d60e865119.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Text:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d60e865119.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>HaydenBucks <i class="fa-solid fa-mug-hot"></i></h1>
+        <a href="/login"><button>Log-In</button></a>
+        <a href="/signup"><button>Sign-Up</button></a> 
+    </header>
+
+    <section class="container">
+
+            
+            
+            <form action="/coffeeOrderForm" method="POST">
+
+                <section>
+                    <h5>Customer's Name:</h5>
+                    <input type="text" class="info name" name="name" placeholder="Their Name">
+                </section>
+                
+
+                <section>
+                    <h5>Size:</h5>
+                    <label for="size">Tall</label>
+                    <input type="radio" class="info size" name="size" value="Tall"><br>
+                    <label for="size">Grande</label>
+                    <input type="radio" class="info size" name="size" value="Grande"><br>
+                    <label for="size">Venti</label>
+                    <input type="radio" class="info size" name="size" value="Venti"><br>
+                </section>
+
+                <section>
+                    <h5>Beverage:</h5>
+                    <label for="beverage">Tazania Peaberry</label>
+                    <input type="radio" class="info beverage" name="beverage" value="Tazania Peaberry"><br>
+                    <label for="beverage">Hawaii Kona</label>
+                    <input type="radio" class="info beverage" name="beverage" value="Hawaii Kona"><br>
+                    <label for="beverage">Kopi Luwac</label>
+                    <input type="radio" class="info beverage" name="beverage" value="Kopi Luwac"><br>
+                </section>
+                
+                <section class="noteInput">
+                    <label for="note">Note:</label><br>
+                    <input type="text" class="info note" name="note" placeholder="Note">
+                </section>
+              <button type="submit">Submit</button>
+            </form>
+    </section>
+
+    <section class="otherContainer">
+        <h1 class="tagLine">Coffee is life. Made from Civet cats.</h1>
+    </section>
+ 
+    <script src="main.js"></script>
+
+</body>
+</html>
