@@ -25,12 +25,41 @@ header h1 {
     font-size: 3rem;
     margin-bottom: .2rem;
     color: #f6fcf4;
+    text-shadow: #1e221c 8px 4px;
+}
+
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    margin: 0;
 }
 
 a {
     text-decoration: none;
     color: black;
 }
+
+button{
+    font-family: 'Crimson Text', serif;
+    font-weight: 700;
+    border-radius: 1rem;
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    padding: 2px 16px;
+    height: 32px;
+    min-width: 60px;
+    min-height: 32px;
+    border: none;
+    color: #fff;
+    background-color:#1e221c;
+    transition: background-color .17s ease,color .17s ease;
+    box-shadow: 0 8px 22px 0 rgb(37 44 97 / 15%), 0 4px 6px 0 rgb(93 100 148 / 20%);
+} 
 /* ///////////// */
 /* Index styling */
 /* ///////////// */
@@ -42,6 +71,7 @@ a {
     float: left;
     background: #bdd7b0;
     border-radius: 3rem;
+    box-shadow: #1e221c 0px 8px 24px 0px;
 }
 
 .container section {
@@ -55,6 +85,7 @@ a {
 .container label {
     font-size: 1.5rem;
     font-weight: 700;
+    color: #1e221c;
 }
 
 
@@ -66,19 +97,37 @@ a {
     margin: 0;
 }
 
-.otherContainer {
+.tag {
     width: 40%;
     float: left;
     margin: 0 10% 0 5%;
     padding: 1rem 2%;
     background: #bdd7b0;
     border-radius: 3rem;
+    box-shadow: #1e221c 0px 8px 24px 0px; 
+}
+
+.otherContainer {
+    width: 40%;
+    float: left;
+    margin: 3rem 10% 0 5%;
+    padding: 1rem 2%;
+    background: #bdd7b0;
+    border-radius: 3rem;
+    box-shadow: #1e221c 0px 8px 24px 0px;
 }
 
 .otherContainer h1 {
     font-family: 'Bebas Neue', cursive;
     font-size: 6rem;
-    margin:0;
+    margin: 0;
+    letter-spacing: .1rem;
+    color:#f6fcf4;
+}
+.tag h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 6rem;
+    margin: 0;
     letter-spacing: .1rem;
     color:#f6fcf4;
 }
@@ -90,9 +139,11 @@ a {
 .containerLogin,
 .containerSignup {
     width: 35%;
-    margin: 0 0 0 10%;
+    margin: 3rem 0 0 10%;
     padding: 1rem 2%;
     background:#bdd7b0;
+    border-radius: 3rem;
+    box-shadow: #1e221c 0px 8px 24px 0px;
     float: left;
 }
 
@@ -106,6 +157,43 @@ a {
 /* Barista */
 /* ////////////////// */
 
+.baristaHead {
+    margin: 0 10% 3rem 10%;
+    width: 80%;
+    padding: 1rem 2%;
+    height: 15rem;
+    clear: both;
+    background:#4f545c;
+    border-radius: 3rem;
+}
+
+h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5rem;
+    letter-spacing: .1rem;
+    color:#f6fcf4;
+    margin-bottom: 0;
+}
+
+.baristaHead h3 {
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    color:#f6fcf4;
+    margin: 0;
+}
+
+
+.baristaProfile {
+    width: 37.5%;
+    margin: 0 2.5% 0 10%;
+    float: left;
+    color:#bdd7b0;
+}
+
+.baristaRight {
+    margin: 0 10% 0 2.5%;
+}
+
 .containerBarista {
     width: 80%;
     height: auto;
@@ -113,13 +201,49 @@ a {
     padding: 1rem 2%;
 }
 
-.orderList span {
-    margin: 0;
-}
-
 .orderTrue,
 .orderFalse {
-    width: 50%;
+    width: 47.5%;
     float: left;
-    list-style: none;
+    padding: 1rem 2%;
+    border-radius: 3rem;;
+}
+.orderFalse {
+    margin-right:2.5%;
+}
+
+.orderTrue {
+    margin-left: 2.5%;
+}
+
+.orderTrue {
+    background:#bdd7b0;
+}
+
+.orderFalse {
+    background:#f6fcf4;
+}
+
+.orderFalse p,
+.orderTrue p {
+    margin: .8rem 0 0 0;
+    font-weight: 700;
+    font-size: .8rem;
+}
+
+.orderFalse span,
+.orderTrue span {
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.orderPending,
+.orderComplete {
+    float: left;
+    width: 30%;
+}
+
+.fa-thumbs-up,
+.fa-trash-o {
+    margin: .5rem .5rem 0 0;
 }

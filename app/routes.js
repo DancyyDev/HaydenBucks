@@ -32,7 +32,9 @@ module.exports = function(app, passport, db) {
        db.collection('orders').insertOne({
         name: req.body.name, 
         size: req.body.size, 
-        beverage: req.body.beverage, 
+        beverage: req.body.beverage,
+        creamer: req.body.creamer,
+        sugar: req.body.sugar, 
         note: req.body.note,
         complete: false,
       }, (err, result) => {
